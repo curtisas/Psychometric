@@ -18,6 +18,7 @@
 %       THIS IS THE FIRST ONE
 %%
 
+
 if ~strcmpi(spm('ver'), 'spm12')
     error('spm:version:wrongSPMVersion', 'This script requires SPM12.');
 end
