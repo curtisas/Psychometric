@@ -24,7 +24,9 @@ end
 
 % initialize SPM defaults and job manager
 % spm12path = '/cluster/folder/craggs/software/spm12';
-spm12path = '/Users/jcraggs/Applications/spm12';
+% sleep lab spm12path = '/storage/hpc/group/sleeplab/software/spm12'
+
+spm12path = '/storage/hpc/group/sleeplab/software/spm12';
 spm('defaults','FMRI');
 spm_jobman('initcfg');
 clear matlabbatch;
@@ -33,10 +35,12 @@ clear matlabbatch;
 %rootpath = '/cluster/folder/craggs/study/preprocessed/';
 %rootpath = '/Volumes/Data/Imaging/R01/preprocessed/';
 %rootpath = '/Volumes/Data/Imaging/R01/preprocessed/_Jason/';
-rootpath = '/Volumes/Data/Imaging/R01/preprocessed/_Jason_0/';
-subpattern = 'Sub*_v*';
-anatpattern = 'T1_*.nii';
-funcpattern = 'RSrun*.nii';
+%sleeplab rootpath = '/storage/hpc/group/sleeplab/preprocessed';
+
+rootpath = '/storage/hpc/group/sleeplab/preprocessed';
+subpattern = 'SPIN2_*_v*_*';
+anatpattern = 'SPIN2_*_t1_*.nii';
+funcpattern = 'SPIN2_*_fMRI_*.nii.gz';
 numruns = 4;
 
 % set variables, number of volumes and functional slices, TR
