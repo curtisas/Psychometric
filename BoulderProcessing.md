@@ -123,36 +123,4 @@ After running  the group ICA select the MANCOVAN tool under utilities
     * Choose model interactions (press 'Cancel' if none)
 * Run MANCOVAN
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   # END Notes
