@@ -22,7 +22,7 @@ else
 fi
 # Default visit naming convention
 if [ -z $2 ] ; then 
-  visit='v1'
+  visit='V1'
 else
   visit=$2
 fi
